@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that.
+
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+
+# Allow Markdown (e.g. fenced code blocks) inside raw HTML blocks such as
+# <details> in the README content rendered on the homepage.
+kramdown:
+  parse_block_html: true
+
+# timezone: Asia/Shanghai
