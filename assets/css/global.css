@@ -118,8 +118,7 @@ div.lazy {
     width: 720px;
     max-width: 100%;
     height: auto;
-    border-radius: 22%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    border-radius: 0;
 }
 
 .readme-body h2 {
