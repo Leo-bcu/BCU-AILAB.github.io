@@ -1,9 +1,10 @@
 {% raw %}
 <p align="center">
-  <img src="/others/logo.png" alt="PaperPilot Logo" class="readme-logo" />
+  <img src="/others/logo.png" alt="PaperPilot Logo" width="720" class="readme-logo" />
 </p>
 
-<h2 align="center">Navigate the Knowledge Ocean. Your Co-pilot Through Every Paper.</h2>
+
+<h2 align="center" class="readme-tagline">Navigate the Knowledge Ocean. Your Co-pilot Through Every Paper.</h2>
 
 
 <p align="center">
