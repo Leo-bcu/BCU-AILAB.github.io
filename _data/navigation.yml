@@ -6,5 +6,5 @@ pages:
   url: https://github.com/Leo-bcu/PaperPilot
   external: true   # opens in a new tab (link to the PaperPilot Github repo)
 - name: Try It
-  url: http://39.105.165.123/
+  url: http://39.96.28.0/
   external: true   # opens in a new tab (link to the PaperPilot trial app)
