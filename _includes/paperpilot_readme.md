@@ -1,11 +1,8 @@
-{% raw %}
 <p align="center">
-  <img src="/others/logo.png" alt="PaperPilot Logo" width="720" class="readme-logo" />
+  <img src="others/logo.png" alt="PaperPilot Logo" width="720" />
 </p>
 
-
-<h2 align="center" class="readme-tagline">Navigate the Knowledge Ocean. Your Co-pilot Through Every Paper.</h2>
-
+<h2 align="center">Navigate the Knowledge Ocean. Your Co-pilot Through Every Paper.</h2>
 
 <p align="center">
   <a href="https://react.dev/">
@@ -18,25 +15,23 @@
     <img src="https://img.shields.io/badge/DB-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
   </a>
   <a href="https://platform.deepseek.com/">
-    <img src="https://img.shields.io/badge/LLM-DeepSeek-4D6BFF?style=flat-square" alt="DeepSeek" />
+    <img src="https://img.shields.io/badge/LLM-DeepSeek-4D6BFF?style=flat-square&logo=deepseek&logoColor=white" alt="DeepSeek" />
   </a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License MIT" /></a>
 </p>
 
 <p align="center">
-  一套完全运行于本地的论文管理与 AI 智能分析系统。数据与文件持久化在本地沙盒，核心科研资产绝对隐私；通过大语言模型与本地 RAG，打通“文献管理 — 智能解析 — 沉浸式阅读 — 个人笔记”的科研全工作流。
+<strong>PaperPilot</strong> 是一款专为科研小白打造的纯本地 AI 论文速读与伴读工具。通过<strong>“自动拆解框架 + 实时伴读讲解”</strong>帮你几分钟读懂文献，并支持<strong>一键导出至 Zotero、EndNote</strong>，轻松衔接论文写作，数据全程留存本机。
 </p>
 
 ---
 
 ## 📰 News
 
+- ✨ **2026-11-21**：项目 v1.0.3 正式上线！新增 **Zotero / EndNote 一键导出 优化了一系列问题！
 - 🌞 **2026-09-06**：项目 v1.0.1 正式上线！优化了一系列问题！
-- 🚀 **2026-09-06**：[体验网址](http://39.105.165.123/)正式上线，欢迎在线体验！
+- 🚀 **2026-09-06**：[体验网址](http://39.96.28.0/)正式上线，欢迎在线体验！
 - 🎉 **2026-08-19**：项目 v1.0.0 正式上线！
-
-
----
 
 ## 🖼️ 界面预览
 
@@ -53,28 +48,29 @@
 </p>
 
 ## ✨ Why PaperPilot?
+PaperPilot 主打四件事：**小白友好、极速伴读、生态互通、纯本地隐私**。
 
-PaperPilot 主打三件事：**简单、AI 辅助、纯本地**。
-
-- 🏠 **纯本地部署（Local-First）**：前后端分离，所有数据与 PDF 文件持久化在本地沙盒（`workspace/storage/`），SQLite 单文件数据库零配置；
-- 🤖 **AI 辅助分析**：上传 PDF 自动触发「MinerU 解析 → 元数据智能提取 → 八维度深度解析」流水线；八维度覆盖 *问题与动机 / 核心方法论 / 实验设计 / 资源与算力 / 实验充分性 / 主要结论 / 论文优点 / 局限与不足*；沉浸式阅读模式下，右侧 AI 问答侧边栏支持全文问答与框选段落即时提问。
-- 🎯 **简单易用**：开箱即用——无需租服务器、无需手改 `.env`，克隆仓库 → 启动前后端，浏览器即获完整体验；所有 API Key 均可在应用内「设置」可视化填写，新手 5 分钟即可跑通全流程。配合类 VSCode 的多层级文件夹树、拖拽整理、浅色 / 深色 / 跟随日出日落的自动主题与个性化欢迎页（壁纸 + 诗句），让科研阅读既高效又沉浸。
+- 🚀 **零门槛 5 分钟上手**：无需服务器与 `.env` 配置，启动后在应用内可视化填入 API Key 即可开箱即用。
+- ⚡ **AI 八维度拆解 + 伴读讲解**：上传 PDF 自动提炼动机、方法、实验与优缺点，几分钟抓全貌；阅读时支持全文问答与框选公式/段落即时精讲，卡壳随时答疑。
+- 🔗 **无缝导出 Zotero / EndNote**：不绑架文献库，读完筛选后一键导出至 Zotero 或 EndNote，直接衔接论文写作与引用。
+- 🏠 **纯本地部署（Local-First）**：所有 PDF、笔记与 SQLite 数据库均留存本机，核心科研资料绝对隐私。
 
 ### 更多特性
 
+- 🗣️ **沉浸式 AI 伴读讲解**：阅读 PDF 时支持框选任意段落、公式或图表说明，一键触发 AI 通俗讲解与延伸追问，边读边懂、边懂边记。
 - 📚 **仿大模型平台双栏界面**：左侧控制栏 + 右侧三段式卡片（基础元信息 / AI 深度解析 / 我的学术笔记）。
 - 🔍 **常驻模糊检索 + 双重时间排序**：对标题（中英）、作者、标签、年份毫秒级匹配；支持按入库时间与论文发表时间切换排序。
 - 🏷️ **多维度标签体系**：扁平多对多标签，与文件夹正交——一篇文献可同时归属一个文件夹与多个标签；标签名大小写不敏感自动去重、柔和预设色板（拒绝荧光色）；支持重命名 / 改色 / 删除（级联清理链接）/ 多标签一键合并，以及批量给多篇文献打标或移除，侧边栏按标签色点快速识别。
-- 💾 **完整备份，无损导出**：一键打包导出原件、翻译件、AI 分析结果与个人笔记，支持整库数据备份，迁移、归档与跨机流转无忧。
+- 📤 **生态互通，无损导出**：支持一键导出至 **Zotero、EndNote** 无缝衔接写作引用；同时支持将原件、翻译件、AI 分析结果与个人笔记整库打包备份，迁移、归档与跨机流转无忧。
 - 🛡️ **查重检测 + 断点续析**：上传即比对库内重复，分析失败可一键重试（支持复用已有 MinerU 结果或强制刷新）。
 - ✍️ **富文本笔记**：支持 Markdown / LaTeX 公式 / 本地图片拖拽粘贴，沉淀私人批注。
 - 🎨 **主题与个性化**：浅色 / 深色 / 自动（跟随本地日出日落）；个性化欢迎页按时段切换壁纸与诗句。
-
 ## 🧭 适用场景
 
-- 🎓 **个人论文图书馆**：沉淀自己的研究方向，持续积累阅读脉络与笔记。
-- 🧪 **实验室 / 课题组**：私有部署，数据不出本机，适合做团队内部的论文管理与阅读入口。
-- 📚 **日常阅读工作台**：把发现、解析、阅读、问答、笔记集中到一个入口。
+- 🌱 **科研小白 / 新生入门**：用 AI 拆解框架 + 实时伴读讲解，快速攻克英文长难句与公式，告别“硬啃”论文。
+- ⚡ **开题调研与高频速读**：写综述、跟进前沿时，几分钟筛出高价值文献的核心方法与局限，成倍提升阅读效率。
+- 📝 **Zotero / EndNote 效率搭子**：先用 PaperPilot 极速筛选、精读和记笔记，再一键导出至 Zotero / EndNote 规范引用，各司其职。
+- 🧪 **课题组私有部署**：数据全程留存本地，适合实验室内部搭建安全可控的文献速读工作台。
 
 ## ⚙️ 架构概览
 
@@ -99,7 +95,7 @@ PaperPilot 需要两枚 Key，可先去获取，启动系统后再在「设置�
 ### 2) 📦 克隆仓库
 
 ```bash
-git clone https://github.com/Leo-bcu/PaperPilot.git
+git clone [https://github.com/Leo-bcu/PaperPilot.git](https://github.com/Leo-bcu/PaperPilot.git)
 cd PaperPilot
 ```
 
@@ -196,9 +192,8 @@ npm run build      # 产物输出到 frontend/dist
 
 ## 💬 欢迎交流
 
-如有问题、建议或使用心得，欢迎通过`KaiyuLi2025@163.com` 反馈。
+如有问题、建议或使用心得，欢迎通过 `KaiyuLi2025@163.com` 反馈。
 
 ## 📄 License
 
 本项目基于 [MIT License](./LICENSE) 开源，欢迎学习、使用与二次开发。
-{% endraw %}
